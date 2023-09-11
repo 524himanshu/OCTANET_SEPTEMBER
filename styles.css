@@ -86,7 +86,7 @@ nav {
 }
 
 /* About and Services section styles (customize as needed) */
-.about, .services, .choose, .join {
+.about, .services,  {
     max-width: 800px;
     margin: 0 auto;
     padding: 50px 20px;
@@ -98,15 +98,6 @@ nav {
     
 }
 
-.choose {
-    margin: 40px 0;
-    text-align: center;
-}
-
-.join {
-    margin: 40px 0;
-    text-align: center;
-}
 
 
 /* Contact section styles */
