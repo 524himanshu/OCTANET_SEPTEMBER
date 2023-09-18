@@ -3,33 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Website Project Tasks</title>
 </head>
 <body>
     <header>
         <h1>Website Project Tasks</h1>
     </header>
-<main>
-    <div class="task-form">
-        <input type="text" id="task-input" placeholder="Add a new task...">
-        <input type="date" id="deadline-input">
-        <select id="priority-input">
-            <option value="low">Low Priority</option>
-            <option value="medium">Medium Priority</option>
-            <option value="high">High Priority</option>
-        </select>
-        <input type="text" id="label-input" placeholder="Add labels...">
-        <button id="add-task">Add</button>
-    </div>
-    <div class="task-list">
-        <h2>Task List</h2>
-        <ul id="task-list">
-            <!-- Tasks will be added here dynamically -->
-        </ul>
-    </div>
-</main>
-
+    <main>
+        <div class="task-form">
+            <input type="text" id="task-input" placeholder="Add a new task...">
+            <input type="date" id="deadline-input">
+            <select id="priority-input">
+                <option value="low">Low Priority</option>
+                <option value="medium">Medium Priority</option>
+                <option value="high">High Priority</option>
+            </select>
+            <input type="text" id="label-input" placeholder="Add labels...">
+            <button id="add-task">Add</button>
+        </div>
+        <div class="task-list">
+            <h2>Task List</h2>
+            <ul id="task-list">
+                <!-- Tasks will be added here dynamically -->
+            </ul>
+        </div>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
