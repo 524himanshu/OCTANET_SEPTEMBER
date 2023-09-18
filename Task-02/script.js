@@ -15,10 +15,11 @@ document.addEventListener("DOMContentLoaded", function () {
         if (taskText !== "") {
             const listItem = document.createElement("li");
             listItem.innerHTML = `
-                <span>${taskText}</span>
-                <span>Deadline: ${deadline}</span>
-                <span>Priority: ${priority}</span>
-                <span>Labels: ${labels.join(', ')}</span>
+                <span class="task-text">${taskText}</span>
+                <span class="deadline">Deadline: ${deadline}</span>
+                <span class="priority">Priority: ${priority}</span>
+                <span class="labels">Labels: ${labels.join(', ')}</span>
+                <progress max="100" value="0"></progress>
             `;
 
             taskList.appendChild(listItem);
