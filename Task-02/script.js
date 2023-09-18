@@ -14,14 +14,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (taskText !== "") {
             const listItem = document.createElement("li");
+            const progress = document.createElement("progress");
+            progress.max = 100; // Set the maximum progress value
+            progress.value = 0; // Initial progress value
+
             listItem.innerHTML = `
                 <span class="task-text">${taskText}</span>
                 <span class="deadline">Deadline: ${deadline}</span>
                 <span class="priority">Priority: ${priority}</span>
                 <span class="labels">Labels: ${labels.join(', ')}</span>
-                <progress max="100" value="0"></progress>
             `;
 
+            listItem.appendChild(progress); // Add the progress element
             taskList.appendChild(listItem);
             taskInput.value = "";
             deadlineInput.value = "";
